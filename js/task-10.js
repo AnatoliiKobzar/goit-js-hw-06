@@ -35,4 +35,5 @@ function onBtnDestroyClick() {
 function destroyBoxes() {
   boxes = [];
   boxWithBoxesEl.innerHTML = '';
+  inputEl.value = 0;
 }
