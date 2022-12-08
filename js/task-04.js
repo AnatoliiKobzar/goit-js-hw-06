@@ -20,3 +20,20 @@ function onBtnIncrClick() {
   counterValue += 1;
   valueEl.textContent = counterValue;
 }
+
+// Добавление кнопки обнуления
+
+const btnResetValue = document.createElement('button');
+btnResetValue.type = "button";
+btnResetValue.classList = "js-btn";
+btnResetValue.textContent = "Reset";
+
+const containerEl = document.querySelector('#counter');
+containerEl.insertAdjacentElement('beforeend', btnResetValue);
+
+btnResetValue.addEventListener('click', onBtnResetClick);
+
+function onBtnResetClick() {
+  counterValue = 0;
+  valueEl.textContent = counterValue;
+}
