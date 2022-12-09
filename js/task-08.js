@@ -15,10 +15,11 @@ function onSubmitForm(event) {
 
   const dataForm = {};
 
-  dataForm[event.currentTarget.elements[0].name] = event.currentTarget.elements[0].value;
-  dataForm[event.currentTarget.elements[1].name] = event.currentTarget.elements[1].value;
-
-  console.log(dataForm);
+  dataForm[email.name] = email.value;
+  dataForm[password.name] = password.value;
 
   formEl.reset();
+  
+  console.log(dataForm);
+  return dataForm;
 }
