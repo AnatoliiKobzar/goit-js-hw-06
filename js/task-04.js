@@ -24,9 +24,9 @@ function onBtnIncrClick() {
 // Добавление кнопки обнуления
 
 const btnResetValue = document.createElement('button');
-btnResetValue.type = "button";
-btnResetValue.classList = "js-btn";
-btnResetValue.textContent = "Reset";
+btnResetValue.type = 'button';
+btnResetValue.classList = 'js-btn';
+btnResetValue.textContent = 'Reset';
 
 const containerEl = document.querySelector('#counter');
 containerEl.insertAdjacentElement('beforeend', btnResetValue);
